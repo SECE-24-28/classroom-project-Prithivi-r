@@ -5,7 +5,6 @@ export default function RectangleBox() {
   return (
     <RectangleBoxStyle>
       <div className="content-box">
-        
         <div className="aptitude">
           <h1>Aptitude Guru Hem</h1>
           <h2>At AGH, we shape futures and build skills that</h2>
@@ -94,7 +93,6 @@ export default function RectangleBox() {
             excellent Aptitude training.
           </p>
         </div>
-
       </div>
     </RectangleBoxStyle>
   );
