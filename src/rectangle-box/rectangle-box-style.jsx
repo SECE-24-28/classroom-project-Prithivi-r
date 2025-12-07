@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const RectangleBoxStyle = styled.div`
   background: #ffffff;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 
   display: flex;
@@ -44,7 +44,7 @@ export const RectangleBoxStyle = styled.div`
 
   .aptitude p {
     font-size: 18px;
-    color: #292929;
+    color: #000000;
     line-height: 1.8;
     margin-top: 20px;
     max-width: 950px;
@@ -68,7 +68,7 @@ export const RectangleBoxStyle = styled.div`
 
   .symbol p {
     font-size: 20px;
-    color: #2d2d2d;
+    color: #000000;
     line-height: 1.8;
   }
 
@@ -114,7 +114,7 @@ export const RectangleBoxStyle = styled.div`
   .child_one p,
   .child_two p {
     font-size: 18px;
-    color: #222;
+    color: #000000;
     line-height: 1.7;
     margin-top: 10px;
   }

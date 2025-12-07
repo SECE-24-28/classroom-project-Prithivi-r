@@ -83,6 +83,7 @@ export const GalanceStyle = styled.div`
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 40px;
+    color: #000000;
   }
 
   .title span {
@@ -108,12 +109,13 @@ export const GalanceStyle = styled.div`
 
   .card h3 {
     font-size: 20px;
-    color: #1f0404ff;
+    color: #000000;
   }
 
   .card h2 {
     font-size: 30px;
     font-weight: 700;
+    color: #000000;
   }
 
   .pink {
