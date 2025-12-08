@@ -60,7 +60,7 @@ export default function RectangleBox() {
         </div>
 
         {/* ⭐ NEW SECTION ADDED HERE ⭐ */}
-        <div className="Trust">
+        {/* <div className="Trust">
           <div className="child01">
             <p>
               100+ <br /> colleges
@@ -92,7 +92,7 @@ export default function RectangleBox() {
             With our continuous research and development, we provide you with
             excellent Aptitude training.
           </p>
-        </div>
+        </div> */}
       </div>
     </RectangleBoxStyle>
   );

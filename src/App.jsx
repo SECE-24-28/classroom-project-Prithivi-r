@@ -12,6 +12,7 @@ function App() {
   );
 }
 
+
 export default App;
 
 */
@@ -22,14 +23,25 @@ import Mycomponent from "./Galance/galance-component";
 import ContactSection from "./Contact/ContactSection";
 import OurPromisesComponent from "./our-promises/our-promises";
 import TrustedbyComponent from "./trusted-by/trusted-by-component";
+import { Routes } from "react-router-dom";
+import UsestateformComponent from "./usestate-1st/use-state-component";
 function App() {
   return (
     <>
-      <RectangleBox />
+      {/* <RectangleBox />
       <Mycomponent />
       <TrustedbyComponent />
       <OurPromisesComponent />
-      <ContactSection />
+      <ContactSection /> */}
+      {/* <div>
+        <Routes>
+          <Routes path="/eshwar" element={<HelloWorldComponent />} />
+          <Routes path="/our-promises" element={<OurPromisesComponent />} />
+        </Routes>
+      </div> */}
+      <div>
+        <UsestateformComponent />
+      </div>
     </>
   );
 }
