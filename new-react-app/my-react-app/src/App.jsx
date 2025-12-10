@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/*import "./App.css";
+import LeadersTomorrowComponent from "./leaders-tomorrow/leaders-tomorrow-component";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      {<HelloWorldComponent /> }
+      {<FlexBoxComponent /> }
+      <LeadersTomorrowComponent />
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+*/
+
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import FetchApiComponent from "./fetch-api/fetch-api-component";
+import UseEffectComponent from "./use-effect-practice/use-effect-practice";
+import UseEffectPracticeTwo from "./use-effect-practice/use-effect-practice-2";
+import UseEffectPracticeThree from "./use-effect-practice/use-effect-practice-3";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<FetchApiComponent />} />
+      <Route path="/api-fetch" element={<FetchApiComponent />} />
+      <Route path="/use-effect-practice" element={<UseEffectComponent />} />
+        <Route
+          path="/use-effect-practice-2"
+          element={<UseEffectPracticeTwo />}
+        />
+         <Route
+          path="/use-effect-practice-3"
+          element={<UseEffectPracticeThree />}
+        />
+      </Routes>
+      
+   
+     
+  );
+}
+
+export default App;

@@ -18,31 +18,20 @@ export default App;
 */
 
 import React from "react";
-import RectangleBox from "./rectangle-box/rectangle-box-component";
-import Mycomponent from "./Galance/galance-component";
-import ContactSection from "./Contact/ContactSection";
-import OurPromisesComponent from "./our-promises/our-promises";
-import TrustedbyComponent from "./trusted-by/trusted-by-component";
-import { Routes } from "react-router-dom";
-import UsestateformComponent from "./usestate-1st/use-state-component";
+import { Routes, Route } from "react-router-dom";
+import FetchApiComponent from "./fetch-api/fetch-api-component";
+import UseEffectComponent from "./use-effect-practice/use-effect-component";
+import UseEffectComponent2 from "./use-effect-practice/use-effect-component-2";
+import UseEffectComponent3 from "./use-effect-practice/use-effect-component-3";
+
 function App() {
   return (
-    <>
-      {/* <RectangleBox />
-      <Mycomponent />
-      <TrustedbyComponent />
-      <OurPromisesComponent />
-      <ContactSection /> */}
-      {/* <div>
-        <Routes>
-          <Routes path="/eshwar" element={<HelloWorldComponent />} />
-          <Routes path="/our-promises" element={<OurPromisesComponent />} />
-        </Routes>
-      </div> */}
-      <div>
-        <UsestateformComponent />
-      </div>
-    </>
+    <Routes>
+      <Route path="/api-fetch" element={<FetchApiComponent />} />
+      <Route path="/use-effect-practice" element={<UseEffectComponent />} />
+      <Route path="/use-effect-practice-2" element={<UseEffectComponent2 />} />
+      <Route path="/use-effect-practice-3" element={<UseEffectComponent3 />} />
+    </Routes>
   );
 }
 
